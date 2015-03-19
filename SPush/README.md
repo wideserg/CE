@@ -1,5 +1,9 @@
 Developer Tools extension to auto save script/css files to SharePoint on the fly.
 
+![Example](../_promo/SPush/sample.gif?raw=true "Optional Title")?raw=true "Optional Title"
+![Example2]("https://github.com/wideserg/CE/blob/master/_promo/SPush/sample.gif")
+![Example3](_promo/SPush/sample.gif)
+
 [SPush in Chrome Store](https://chrome.google.com/webstore/detail/spush/bdeilgnnljmooaheogonhpggepnhhlhf)
 
 It is the quickest way to change and test content files of your SharePoint App. 
