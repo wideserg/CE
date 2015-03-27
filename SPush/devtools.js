@@ -14,7 +14,8 @@ var SPush = (function(sp) {
             fileUri.indexOf(SP.Utilities.Utility.layoutS_LATESTVERSION_URL) === -1 /*Isn`t a layouts resource*/
         ) {
 
-            var fileRelativeUrl = fileUri.substr(_spPageContextInfo.siteAbsoluteUrl.length);
+            var relativePrefix = _spPageContextInfo.webServerRelativeUrl === '/' ? '' : _spPageContextInfo.webServerRelativeUrl;
+            var fileRelativeUrl = relativePrefix + fileUri.substr(_spPageContextInfo.siteAbsoluteUrl.length);
             var pathParts = fileRelativeUrl.split('/');
             var fileName = pathParts[pathParts.length - 1]; /*'devtools.js';*/
             var folderRelativeUrl = fileRelativeUrl.substr(0, fileRelativeUrl.indexOf(fileName));
