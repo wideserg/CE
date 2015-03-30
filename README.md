@@ -1,6 +1,6 @@
 Developer Tools extension to auto save script/css files to SharePoint on the fly.
 
-![Example](../_promo/SPush/sample.gif?raw=true "Live usage example")
+![Example](_promo/SPush/sample.gif?raw=true "Live usage example")
 
 [SPush in Chrome Store](https://chrome.google.com/webstore/detail/spush/bdeilgnnljmooaheogonhpggepnhhlhf)
 
