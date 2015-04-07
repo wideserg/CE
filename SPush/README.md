@@ -1,5 +1,5 @@
 
-#Developer Tools extension to auto save script/css files to SharePoint on the fly.
+#Developer Tools extension to auto save script/css files to SharePoint on the fly
 
 ![Example](../_promo/SPush/sample.gif?raw=true "Live usage example")
 
