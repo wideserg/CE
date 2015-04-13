@@ -13,7 +13,6 @@ var SPush = (function(sp) {
             !window._spushStarted && /*First SPush request*/
             fileUri.indexOf(SP.Utilities.Utility.layoutS_LATESTVERSION_URL) === -1 /*Isn`t a layouts resource*/
         ) {
-
             var relativePrefix = _spPageContextInfo.webServerRelativeUrl === '/' ? '' : _spPageContextInfo.webServerRelativeUrl;
             var fileRelativeUrl = relativePrefix + fileUri.substr(_spPageContextInfo.siteAbsoluteUrl.length);
             var pathParts = fileRelativeUrl.split('/');
@@ -71,12 +70,16 @@ chrome.devtools.panels.sources.createSidebarPane(
 
 chrome.devtools.inspectedWindow.onResourceContentCommitted.addListener(function(fileInfo, content) {
 
-    if (fileInfo.type === 'script' || fileInfo.type === 'stylesheet') {
+    try {
+        if (fileInfo.type === 'script' || fileInfo.type === 'stylesheet') {
 
-        backgroundPageConnection.postMessage({
-            tabId: chrome.devtools.inspectedWindow.tabId,
-            code: '(' + SPush.rewriteFile + ')("' + fileInfo.url + '","' + btoa(content) + '",' + (localStorage['autoCheckOut'] === 'true') + ');'
-        });
+            backgroundPageConnection.postMessage({
+                tabId: chrome.devtools.inspectedWindow.tabId,
+                code: '(' + SPush.rewriteFile + ')("' + fileInfo.url + '","' + btoa(content) + '",' + (localStorage['autoCheckOut'] === 'true') + ');'
+            });
+        }
+    } catch (er) {
+        chrome.devtools.inspectedWindow.eval("console.error(\"" + er.toString() + "\");");
     }
 });
 
