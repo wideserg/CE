@@ -13,7 +13,7 @@ var SPush = (function(sp) {
             !window._spushStarted && /*First SPush request*/
             fileUri.indexOf(SP.Utilities.Utility.layoutS_LATESTVERSION_URL) === -1 /*Isn`t a layouts resource*/
         ) {
-            var relativePrefix = _spPageContextInfo.webServerRelativeUrl === '/' ? '' : _spPageContextInfo.webServerRelativeUrl;
+            var relativePrefix = _spPageContextInfo.siteServerRelativeUrl === '/' ? '' : _spPageContextInfo.siteServerRelativeUrl;
             var fileRelativeUrl = relativePrefix + fileUri.substr(_spPageContextInfo.siteAbsoluteUrl.length);
             var pathParts = fileRelativeUrl.split('/');
             var fileName = pathParts[pathParts.length - 1]; /*'devtools.js';*/

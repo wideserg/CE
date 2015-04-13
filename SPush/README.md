@@ -1,5 +1,5 @@
 
-#Developer Tools extension to auto save script/css files to SharePoint on the fly.
+#Developer Tools extension to auto save script/css files to SharePoint on the fly
 
 ![Example](../_promo/SPush/sample.gif?raw=true "Live usage example")
 
@@ -19,3 +19,13 @@ Tested under SharePoint 2010+ (JSOM) on-prem.
 I hope this simple tool will save your time!
 
 Thanks!
+
+###Change Log
+0.63
+* Fixed bug with saving in not root site collection.
+
+0.64
+* Fixed issue with relative URL while editing scripts of apps from the host web.
+
+0.65
+* DevTools error logging added.
