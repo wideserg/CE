@@ -29,3 +29,6 @@ Thanks!
 
 0.65
 * DevTools error logging added.
+
+0.66
+* JSLink save issue fixed.
