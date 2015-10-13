@@ -34,5 +34,5 @@ Thanks!
 * JSLink save issue is fixed.
 
 0.67
-* btoa is replaced with custom implementation;
+* solved issue with saving files with comments and other spec chracters;
 * 'style%20library' decoding issue is fixed.
