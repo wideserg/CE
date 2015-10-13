@@ -31,4 +31,8 @@ Thanks!
 * DevTools error logging added.
 
 0.66
-* JSLink save issue fixed.
+* JSLink save issue is fixed.
+
+0.67
+* btoa is replaced with custom implementation;
+* 'style%20library' decoding issue is fixed.
