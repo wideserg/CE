@@ -11,7 +11,7 @@ Key features:
 * Cntrl+s forces js/css to be rewritten;
 * Allows modifying SharePoint 2013 App content from the host web;
 * Allows to automatically check-out js/css documents if "Require documents to be checked out before they can be edited" SPList option is True;
-* Allows quick creation of sample js and css files by executing `SPush(typeOrUrl)` in console:
+* Allows quick creation of sample js and css files by executing `SPush(typeOrUrl)` in console (see sample video in Links below):
 	* `SPush('css')` - creates empty *style.css* and automatically load to current page;
 	* `SPush('SiteAssets/folder1/mystyle.css')` - creates empty *mystyle.css* by provided url and automatically load to current page;
 	* `SPush('js')` - creates empty *script.js* and automatically load to current page;
