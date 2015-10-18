@@ -10,9 +10,16 @@ In addition it might be a good opportunity to fix some js/css bugs without need 
 
 Key features:
 
-* Cntrl+s forces js or css to be rewritten.
-* Allows modifying SharePoint 2013 App content from the host web
-* Allows to automatically check-out js/css documents if "Require documents to be checked out before they can be edited" option is True.
+* Cntrl+s forces js or css to be rewritten;
+* Allows modifying SharePoint 2013 App content from the host web;
+* Allows to automatically check-out js/css documents if "Require documents to be checked out before they can be edited" SPList option is True;
+* Allows quick creation of sample js and css files by executing `SPush(typeOrUrl)` in console:
+	* `SPush('css')` - creates empty *style.css* and automatically load to current page;
+	* `SPush('SiteAssets/folder1/mystyle.css')` - creates empty *mystyle.css* by provided url and automatically load to current page;
+	* `SPush('js')` - creates empty *script.js* and automatically load to current page;
+	* `SPush('SiteAssets/folder1/myscript.js')` - creates empty *myscript.js* by provided url and automatically load to current page;
+	* Defautl library for sample css/js files is 'SiteAssets'. You can change it from SPush sidebur inside DevTools source tab.
+
 
 Tested under SharePoint 2010+ (JSOM) on-prem.
 
@@ -36,3 +43,7 @@ Thanks!
 0.67
 * solved issue with saving files with comments and other spec chracters;
 * 'style%20library' decoding issue is fixed.
+
+1.0
+* SPush(typeOrUrl) help file creation method is implemented;
+* 'Library url' configureation is added.

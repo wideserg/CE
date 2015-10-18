@@ -1,10 +1,16 @@
 <html>
 	<head>
-		
+		<style type="text/css">
+			.settings-row{
+				margin: 0 5px;
+			}
+		</style>
 	</head>
 	<body>
-		<label><input id='chbSaveAllFrames' class="checkbox-elem" type="checkbox">Save in all frames</label>
-		<label><input id='chbAutoCheckOut' class="checkbox-elem" type="checkbox">Require Check-out</label> 
+		<div class='settings-row'><input id='chbSaveAllFrames' class="checkbox-elem" type="checkbox">Save in all frames</div>
+		<div class='settings-row'><input id='chbAutoCheckOut' class="checkbox-elem" type="checkbox">Require Check-out</div> 		
+		<div class='settings-row'>Library url: <input id='txtLibUrl' type="text" value="SiteAssets" title="Relative library Url" /></div> 
+		<div class='settings-row save'><button id='btnSave' value="Save" title="Save settings">Save</button></div> 
 		<script type='text/javascript' src="sidebar.js" ></script>
 	</body>
 </html>
