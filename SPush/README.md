@@ -3,8 +3,6 @@
 
 ![Example](../_promo/SPush/sample.gif?raw=true "Live usage example")
 
-[SPush in Chrome Store](https://chrome.google.com/webstore/detail/spush/bdeilgnnljmooaheogonhpggepnhhlhf)
-
 It is the quickest way to change and test content files of your SharePoint App. 
 In addition it might be a good opportunity to fix some js/css bugs without need to deploy scripts using Visual Studio or provide new package of the app.
 
@@ -26,6 +24,11 @@ Tested under SharePoint 2010+ (JSOM) on-prem.
 I hope this simple tool will save your time!
 
 Thanks!
+
+###Links
+[SPush in Chrome Store](https://chrome.google.com/webstore/detail/spush/bdeilgnnljmooaheogonhpggepnhhlhf)
+
+[Video: SPush+SPTabs](https://chrome.google.com/webstore/detail/spush/bdeilgnnljmooaheogonhpggepnhhlhf)
 
 ###Change Log
 0.63
