@@ -13,9 +13,9 @@ Key features:
 * Allows to automatically check-out js/css documents if "Require documents to be checked out before they can be edited" SPList option is True;
 * Allows quick creation of sample js and css files by executing `SPush(typeOrUrl)` in console (see sample video in Links below):
 	* `SPush('css')` - creates empty *style.css* and automatically load to current page;
-	* `SPush('SiteAssets/folder1/mystyle.css')` - creates empty *mystyle.css* by provided url and automatically load to current page;
+	* `SPush('https://spswide.sharepoint.com/sites/dev/SiteAssets/folder1/mystyle.js')` - creates empty *mystyle.css* by provided url and automatically load to current page;
 	* `SPush('js')` - creates empty *script.js* and automatically load to current page;
-	* `SPush('SiteAssets/folder1/myscript.js')` - creates empty *myscript.js* by provided url and automatically load to current page;
+	* `SPush('https://spswide.sharepoint.com/sites/dev/SiteAssets/folder1/myscript.js')` - creates empty *myscript.js* by provided url and automatically load to current page;
 	* Default library for sample css/js files is 'SiteAssets'. You can change it from SPush sidebar inside DevTools sources tab. (__relative web library Url should be used__)
 
 
