@@ -50,3 +50,7 @@ Thanks!
 1.0
 * SPush(typeOrUrl) help file creation method is implemented;
 * 'Library url' configureation is added.
+ 
+###Known issues
+* `SPush(typeOrUrl)` might not load js/css to DevTools source tab when use not in list forms.
+
