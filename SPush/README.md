@@ -28,7 +28,7 @@ Thanks!
 ###Links
 [SPush in Chrome Store](https://chrome.google.com/webstore/detail/spush/bdeilgnnljmooaheogonhpggepnhhlhf)
 
-[Video: SPush+SPTabs](https://chrome.google.com/webstore/detail/spush/bdeilgnnljmooaheogonhpggepnhhlhf)
+[Video: SPush+SPTabs](https://www.youtube.com/watch?v=zwxY_AC1M1c)
 
 ###Change Log
 0.63
