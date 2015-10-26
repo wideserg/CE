@@ -6,7 +6,7 @@
 It is the quickest way to change and test content files of your SharePoint App. 
 In addition it might be a good opportunity to fix some js/css bugs without need to deploy scripts using Visual Studio or provide new package of the app.
 
-Key features:
+###Key features:
 
 * __Cntrl+s__ forces js/css to be rewritten;
 * Allows modifying SharePoint 2013 App content from the host web;
@@ -52,5 +52,5 @@ Thanks!
 * 'Library url' configureation is added.
  
 ###Known issues
+* When you change your css from `Elements` panel using `Styles` SidebarPane, chrome automatically fires __Cntrl+s__, so your css is automaticall saved.
 * `SPush(typeOrUrl)` might not load js/css to DevTools source tab when use not in list forms.
-
