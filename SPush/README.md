@@ -13,7 +13,7 @@ In addition it might be a good opportunity to fix some js/css bugs without need 
 * Allows to automatically check-out js/css documents if "Require documents to be checked out before they can be edited" SPList option is True;
 * Allows quick creation of sample js and css files by executing `SPush(typeOrUrl)` in console (see sample video in Links below):
 	* `SPush('css')` - creates empty *style.css* and automatically load to current page;
-	* `SPush('https://spswide.sharepoint.com/sites/dev/SiteAssets/folder1/mystyle.js')` - creates empty *mystyle.css* by provided url and automatically load to current page;
+	* `SPush('https://spswide.sharepoint.com/sites/dev/SiteAssets/folder1/mystyle.css')` - creates empty *mystyle.css* by provided url and automatically load to current page;
 	* `SPush('js')` - creates empty *script.js* and automatically load to current page;
 	* `SPush('https://spswide.sharepoint.com/sites/dev/SiteAssets/folder1/myscript.js')` - creates empty *myscript.js* by provided url and automatically load to current page;
 	* Default library for sample css/js files is 'SiteAssets'. You can change it from SPush sidebar inside DevTools sources tab. (__relative web library Url should be used__)
@@ -52,5 +52,5 @@ Thanks!
 * 'Library url' configureation is added.
  
 ###Known issues
-* When you change your css from `Elements` panel using `Styles` SidebarPane, chrome automatically fires __Cntrl+s__, so your css is automaticall saved.
+* When you change your css from `Elements` panel using `Styles` SidebarPane, chrome automatically fires __Cntrl+S__, so your css is automaticall saved.
 * `SPush(typeOrUrl)` might not load js/css to DevTools source tab when use not in list forms.
