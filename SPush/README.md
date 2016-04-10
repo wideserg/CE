@@ -50,6 +50,13 @@ Thanks!
 1.0
 * SPush(typeOrUrl) help file creation method is implemented;
 * 'Library url' configureation is added.
+
+1.0.1
+* Logo is changed
+
+1.0.2
+* Fixed issue which quick snippet SPush('js') on sub-webs;
+* Removed dependencies from OOB SharePoint load css/js methods.
  
 ###Known issues
 * When you change your css from `Elements` panel using `Styles` SidebarPane, chrome automatically fires __Cntrl+S__, so your css is automaticall saved.
