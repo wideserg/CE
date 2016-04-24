@@ -1,7 +1,7 @@
 
 #Developer Tools extension to store and execute usefull JS code snippets.
 
-Start building your own gallery of js code snipeets and execute them with several clicks on any page.
+Start building your own gallery of js code snippets and execute them with several clicks on any page.
 
 ##Key features:
 * Script syntax highlighting;
