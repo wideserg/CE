@@ -12,4 +12,4 @@ I hope this simple tool will save your time!
 Thanks!
 
 ###Links
-[SPush in Chrome Store](https://chrome.google.com/webstore/detail/spush/bdeilgnnljmooaheogonhpggepnhhlhf)
+**TODO:** [ScriptPanel in Chrome Store](https://chrome.google.com/webstore/detail/spush/bdeilgnnljmooaheogonhpggepnhhlhf)
