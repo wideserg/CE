@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!--
+* Copyright (c) 2010 The Chromium Authors. All rights reserved.  Use of this
+* source code is governed by a BSD-style license that can be found in the
+* LICENSE file.
+-->
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../styles/infobar.css">
+    <script data-main="../scripts/infobar.js" src="../scripts/external/require2.1.20.js"></script>
+  </head>
+  <body>
+    <div class="actions" data-bind="foreach: grouppedScripts">
+      <fieldset>
+        <legend data-bind='html: key.group'></legend>
+        <div data-bind="foreach: group">
+          
+          <button class='action' data-bind='text: name, click: $root.executeScript' />
+        </div>
+      </fieldset>
+    </div>
+  </body>
+</html>

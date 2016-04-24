@@ -1,0 +1,21 @@
+body: {
+	padding: 10px;
+}
+.settings {
+	padding: 5px;
+	border: 1px solid silver;
+	border-radius: 3px;
+}
+.buttons {
+	margin: 2px 0;
+}
+.script-content {
+	overflow-y: auto;
+	font-size: 12px;
+}
+.scripts, .script-name, .script-code {
+	width: 100%;
+}
+.info {
+	color: #4CA0DE;
+}

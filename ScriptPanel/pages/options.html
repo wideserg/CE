@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+* Copyright (c) 2010 The Chromium Authors. All rights reserved.  Use of this
+* source code is governed by a BSD-style license that can be found in the
+* LICENSE file.
+-->
+<html>
+  <head>
+    <title>Options</title>
+    <link rel="stylesheet" type="text/css" href="../styles/options.css">
+    <link rel="stylesheet" type="text/css" href="../styles/external/codemirror.css">
+    <link rel="stylesheet" type="text/css" href="../styles/external/flexgrid.css">
+    <script data-main="../scripts/options.js" src="../scripts/external/require2.1.20.js"></script>
+  </head>
+  <body>
+    <h1>Settings</h1>
+    <hr/>
+    <h2>Scripts:</h2>
+    <div class="row">
+      <div class="col-xs-2">
+        <div class="box-row">Button</div>
+      </div>
+      <div class="col-xs-1">
+        <div class="box-row">Group</div>
+      </div>
+      <div class="col-xs-8">
+        <div class="box-row">Script</div>
+      </div>
+      <div class="col-xs-1">
+        <div class="box-row"></div>
+      </div>
+    </div>
+    <div class='settings'>
+      <div class='scripts' data-bind='foreach: scripts'>
+        <div class="row">
+          <div class="col-xs-2">
+            <div class="box-row"><input required type='text' class='script-name' data-bind='value: name, valueUpdate:"afterkeydown", uniqueName: true' /></div>
+          </div>
+          <div class="col-xs-1">
+            <div class="box-row"><input required type='text' class='script-name' data-bind='value: group, valueUpdate:"afterkeydown", uniqueName: true' /></div>
+          </div>
+          <div class="col-xs-8">
+            <div class="box-row">
+              <a href='#' data-bind="click: toggleViewMode, text: isFull() ? '[-]' : '[+]'"></a>
+              <div class="script-content" data-bind="style: { height: isFull() ? 'auto' : '50px' }">
+                <textarea required cols="40" rows="1" class='script-code' data-bind='value: script, codemirror: { lineWrapping: true, lineNumbers: true, matchBrackets: true, mode: {name: "javascript", json: true }}'>
+                </textarea>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-1">
+            <div class="box-row">
+              <a href='#' data-bind="click: $root.removeScript">Delete</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span class='info' data-bind='visible: newChanges'>* scripts aren`t saved.</span>
+      <div class="buttons">
+        <button data-bind='click: addScript'>Add Script</button>
+        <button data-bind='click: saveAllScripts'>Save All Scripts</button>
+      </div>
+    </div>
+    <h2>Export/Import:</h2>
+    <div class='settings'>
+      <div class="buttons">
+        <button data-bind='click: exportJSON'>Export</button> <br/>
+        <input type="file" id="files" name="files[]" data-bind="event: { change: handleFile }"/>
+        <button data-bind='click: importJSON, enable: importIsLoaded'>Import</button>
+      </div>
+    </div>
+  </body>
+</html>

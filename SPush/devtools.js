@@ -7,7 +7,7 @@ var SPush = (function(sp) {
         if (typeof window.SP !== 'undefined' && /*Is SP site*/
             fileUri.startsWith(_spPageContextInfo.siteAbsoluteUrl) && /*File belongs to this web*/
             !window._spushStarted && /*First SPush request*/
-            fileUri.indexOf(SP.Utilities.Utility.layoutS_LATESTVERSION_URL) === -1 /*Isn`t a layouts resource*/
+            fileUri.indexOf("_layouts/15") === -1 /*Isn`t a layouts resource*/
         ) {
             window._spushStarted = true;
 

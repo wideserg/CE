@@ -1,0 +1,36 @@
+{
+    "name": "Script Panel",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "description": "Allows to create quick buttons with your JS !",
+    "background": {
+        "scripts": ["scripts/bg.js"]
+    },
+    "icons": {
+        "16": "images/logo-16.png",
+        "48": "images/logo-48.png",
+        "128": "images/logo-128.png"
+    },
+    "options_ui": {
+        // Required.
+        "page": "pages/options.html",
+        // Recommended.
+        "chrome_style": true,
+        // Not recommended; only provided for backwards compatibility,
+        // and will be unsupported in a future version of Chrome (TBD).
+        "open_in_tab": true
+    },
+    "browser_action": {
+        "default_icon": "images/logo-16.png",
+        "default_popup": "pages/infobar.html"
+    },
+    "permissions": ["tabs", "activeTab"],
+    "content_scripts": [{
+        "matches": [
+            "http://*/*",
+            "https://*/*"
+        ],
+        "js": ["scripts/cs.js"]
+    }],
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
